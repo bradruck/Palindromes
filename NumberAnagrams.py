@@ -51,7 +51,7 @@ def printColumnByRow(maxnum, numcolumns, columnwidth, answerset) :
           "- displayed in a", numcolumns, "column X", math.ceil(len(answerset)/numcolumns), "row format:")
     print()
     j = 0
-    while j < math.ceil(len(answerset)/numcolumns) :
+    while j < int(math.ceil(len(answerset)/numcolumns)) :
         for k in range(j, j + numcolumns) :
             # Test for end of list before printing next value
             if (k * math.ceil(len(answerset)/numcolumns) - j * math.ceil(len(answerset)/numcolumns) + j) < len(answerset) :
